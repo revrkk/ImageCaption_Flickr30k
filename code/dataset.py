@@ -54,7 +54,7 @@ class ImageCaptionDataset():
 
         self.samples = []
 
-        self.images_root = os.path.join(self.config.ROOT, image_folder)
+        self.images_root = os.path.join(self.config.FLICKER_30K_DATASET_FOLDER, image_folder)
         self.transform = transform
 
         sample_list_path = os.path.join(self.config.ROOT, captions_text_file)
